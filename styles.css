@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --bg_color: #000;
+    --font_color: #f1f1f1;
+    --neon_blue: #1F51FF;
+    --neon_green: #39FF14;
+    --neon_purple: #B026FF;
+    --neon_orange: #FF6700;
+}
+
+body {
+    background-color: var(--bg_color);
+    color: var(--font_color);
+}
+
+.logo-ByteForge {
+    display: inline;
+    max-height: 10rem;
+    margin-left: 3.5vw;
+}
+
+.page-title{
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--bg_color);
+}
+
+.page-subtitle {
+    display: block;
+}
+
+.page-title, .page-subtitle {
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+.sep-div {
+    padding-top: 1.75vh;
+    padding-bottom: 1.75vh;
+}
+
+.title-div {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 2vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.neonText{
+    text-shadow: 
+    0 0 7px var(--font_color),
+    0 0 10px var(--font_color),
+    0 0 21px var(--font_color),
+    0 0 42px var(--font_color),
+    0 0 82px var(--font_color),
+    0 0 92px var(--font_color),
+    0 0 102px var(--font_color),
+    0 0 151px var(--font_color);
+}
+
+.title-animation {
+    animation-name: flickering-effect;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flickering-effect {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 
+        2px 2px 6px var(--neon_orange),
+        0 0 10px var(--font_color),
+        -2px -2px 16px var(--neon_green),
+        0 2px 29px var(--neon_blue),
+        2px 0 45px var(--neon_purple),
+        -2px 0 89px var(--neon_blue),
+        0 -2px 98px var(--neon_green),
+        0 0 120px var(--neon_orange),
+        0 0 190px var(--neon_purple);    
+    }
+    20%, 24%, 55%{
+        text-shadow: none;
+    }
+}
+
+@keyframes title-changer {
+    0% {color: var(--neon_blue)}
+    25% {color: var(--neon_green);}
+    50% {color: var(--neon_orange);}
+    75% {color: var(--neon_purple);}
+    100% {color: var(--neon_blue);}
+}
