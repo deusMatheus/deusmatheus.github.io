@@ -9,34 +9,62 @@
 :root {
     --bg_color: #000;
     --font_color: #f1f1f1;
-    --neon_blue: #1F51FF;
+    --neon_blue: #1fffff;
     --neon_green: #39FF14;
-    --neon_purple: #B026FF;
+    --neon_purple: #9400D3;
     --neon_orange: #FF6700;
     --nav_bar: #1f1f1f22;
+    --main_text_bg_color: #1f1f1f;
+}
+
+hr {
+    color: #39FF1410;
 }
 
 body {
     background-color: var(--bg_color);
     color: var(--font_color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    color: var(--neon_purple);
+    background-color: var(--bg_color);
+    position: fixed;
+    bottom: 0vh;
+    padding-top: .25vh;
+    padding-bottom: .25vh;
+}
+
+.footer-div {
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35vh;
 }
 
 .logo-ByteForge {
     display: inline-block;
-    max-height: 10rem;
+    max-height: 15vh;
     margin-left: 3.5vw;
 }
 
 .page-title{
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: inline-block;
-    font-size: 3.2rem;
+    font-size: 5vh;
     font-weight: 900;
     color: var(--bg_color);
 }
 
 .page-subtitle {
     display: block;
-    font-size: 1.15rem;
+    font-size: 2vh;
 }
 
 .sep-div {
@@ -76,16 +104,16 @@ body {
     padding-right: .5vw;
 }
 
-.nav-link:link {
-    color: var(--font_color);
+.nav-link:link, .nav-link:visited {
+    color: var(--neon_blue);
 }
 
-.nav-link:visited{
-    color: var(--neon_purple);
-}
-
-.nav-link:hover{
+.nav-link:hover, .actual-nav-page:hover{
     color: var(--neon_orange);
+}
+
+.actual-nav-page, .actual-nav-page:visited {
+    color: var(--neon_green);
 }
 
 .neonText{
@@ -102,12 +130,12 @@ body {
 
 .title-animation {
     animation-name: flickering-effect;
-    animation-duration: 1.2s;
+    animation-duration: 1.8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes flickering-effect {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    0%, 19%,21%, 33%,38%, 25%, 54%,57%, 100% {
         text-shadow: 
         2px 2px 6px var(--neon_orange),
         0 0 10px var(--font_color),
@@ -119,7 +147,7 @@ body {
         0 0 120px var(--neon_orange),
         0 0 190px var(--neon_purple);    
     }
-    20%, 24%, 55%{
+    20%, 36%, 55%{
         text-shadow: none;
     }
 }
@@ -130,4 +158,88 @@ body {
     50% {color: var(--neon_orange);}
     75% {color: var(--neon_purple);}
     100% {color: var(--neon_blue);}
+}
+
+.main-text {
+    margin-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 2vh;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    justify-content: start;
+    background-color: var(--nav_bar);
+    border-radius: 5px;
+}
+
+.main-text-paragraph{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.ByteForge {
+    color: var(--neon_orange);
+    font-weight: 800;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.main-text-ul {
+    text-align: justify;
+    text-justify: inter-word;
+    list-style: none;
+    display: block;
+}
+
+.main-text-li {
+    display: block;
+    margin-left: 2vw;
+}
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: inline;
+}
+
+.services-title {
+    color: var(--neon_green);
+    display: inline;
+}
+
+.services-title-div{
+    margin-top: 1vh;
+    display: inline-block;
+    text-align: center;
+    width: 90vw;
+    margin-right: 5vw;
+}
+
+.button {
+    width: 3.15vh;
+    height: 3.15vh;
+    display: inline;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 999px;
+    font-size: 2vh;
+    border: none;
+    background-color: var(--neon_orange);
+}
+
+.button:hover {
+    background-color: var(--neon_green);
+    cursor: pointer;
 }
