@@ -13,6 +13,7 @@
     --neon_green: #39FF14;
     --neon_purple: #B026FF;
     --neon_orange: #FF6700;
+    --nav_bar: #1f1f1f22;
 }
 
 body {
@@ -21,24 +22,21 @@ body {
 }
 
 .logo-ByteForge {
-    display: inline;
+    display: inline-block;
     max-height: 10rem;
     margin-left: 3.5vw;
 }
 
 .page-title{
     display: inline-block;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    font-weight: 900;
     color: var(--bg_color);
 }
 
 .page-subtitle {
     display: block;
-}
-
-.page-title, .page-subtitle {
-    margin-top: 1vh;
-    margin-left: 1vw;
+    font-size: 1.15rem;
 }
 
 .sep-div {
@@ -58,6 +56,36 @@ body {
 .header {
     display: flex;
     align-items: center;
+}
+
+.nav-bar {
+    background-color: var(--nav_bar);
+    text-align: center;
+}
+
+.nav-ul{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-ul-li{
+    display: inline;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+}
+
+.nav-link:link {
+    color: var(--font_color);
+}
+
+.nav-link:visited{
+    color: var(--neon_purple);
+}
+
+.nav-link:hover{
+    color: var(--neon_orange);
 }
 
 .neonText{
