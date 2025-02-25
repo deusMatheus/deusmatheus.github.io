@@ -243,3 +243,8 @@ footer {
     background-color: var(--neon_green);
     cursor: pointer;
 }
+
+.landing-page-ul{
+    margin-left: 3vw;
+    list-style-type: square
+}

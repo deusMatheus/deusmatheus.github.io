@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteForge</title>
     <link rel="icon" type="image/x-icon" href="../files/logo_LeonardoAI__2.jpeg">
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,37 +47,54 @@
         <div class="services-title-div">
             <ul class="nav-ul">
                 <li class="nav-ul-li">
-                    <button class="button" id="previous_service_button"> < </button>
+                    <button onclick="previousButtonClick()" class="button" id="previous_service_button"> < </button>
                 </li>
                 <li class="nav-ul-li">
                     <p class="services-title">Serviços</p>
                 </li>
                 <li class="nav-ul-li">
-                    <button class="button" id="previous_service_button"> > </button>
+                    <button onclick="nextButtonClick()" class="button" id="next_service_button"> > </button>
                 </li>
             </ul>
         </div>
         <div>
             <ul class="nav-ul">
-                <li class="enabled">
+                <li id="service-1" class="enabled">
                     <h3>
                         Landing Page
                     </h3>
                     <p class="main-text-paragraph">Uma Landing Page (ou Página de Destino) é uma página da internet criada com um objetivo específico: converter visitantes em clientes ou interessados. Diferente de um site tradicional, que pode ter várias seções e informações, uma página de destino é direta e focada, geralmente com uma única chamada para ação, como:
-                        - Capturar e-mails para uma lista de contatos
-                        - Oferecer um livro digital ou material gratuito
-                        - Apresentar e vender um produto ou serviço
-                        - Inscrever usuários em um evento ou palestra online</p>
+                    </p>
+                    <ul class="landing-page-ul">
+                        <li>
+                            <p class="main-text-paragraph">Capturar e-mails para uma lista de contatos</p>
+                        </li>
+                        <li>
+                            <p class="main-text-paragraph">Oferecer um livro digital ou material gratuito</p>
+                        </li>
+                        <li>
+                            <p class="main-text-paragraph">Apresentar e vender um produto ou serviço</p>
+                        </li>
+                        <li>
+                            <p class="main-text-paragraph">Inscrever usuários em um evento ou palestra online</p>
+                        </li>
+                    </ul>
+                    <p class="main-text-paragraph">Ao colocar desta maneira, a própria página da ByteForge funciona como uma Landing Page, visto que apresentamos produtos e serviços.
+                    </p>
+
                 </li>
-                <li class="disabled">
+                <li id="service-2" class="disabled">
                     <h3>
                         Sistema de gestão e venda de produtos
                     </h3>
+                    <p class="main-text-paragraph">Este é um sistema onde é possível realizar o cadastro de produtos  para controle fincaneiro de produtos vendidos. Aliado à isso, há a possibilidade de cadastro de funcionários com login e senha próprio. O gestor deste sistema tem acesso às vendas de cada funcionário além de poder realizar o cadastro e exclusão dos produtos. Confira abaixo a interface básica do software que é total mente personalizável!
+                    </p>
                 </li>
-                <li class="disabled">
+                <li id="service-3" class="disabled">
                     <h3>
                         Cardápio online personalizado
-                    </h3>
+                    </h3>                    <p class="main-text-paragraph">Para pequenos restaurantes que preferem um cardápio online acessado através do QRCode. Os pedidos são feitos no próprio estabelecimento, mas todos os itens do cardápio possuem valores e descrição dos ingredientes. Totalmente personalizável, o que garante a identidade do seu restaurante. Consultar a possibilidade de pedidos pelo próprio cardápio.
+                    </p>
                 </li>
             </ul>
         </div>
