@@ -53,8 +53,8 @@ footer {
 
 .picture {
     display: inline-block;
-    max-height: 12.5vh;
-    max-width: 12.5vh;
+    max-height: 7.5vh;
+    max-width: 7.5vh;
     margin-left: 3.5vw;
     margin-bottom: 1.5vh;
     margin-top: 2.5vh;
@@ -66,14 +66,14 @@ footer {
     margin-left: 5vw;
     margin-right: 5vw;
     display: inline-block;
-    font-size: 5vh;
+    font-size: 3vh;
     font-weight: 900;
     color: var(--bg_color);
 }
 
 .page-subtitle {
     display: block;
-    font-size: 2vh;
+    font-size: 1.5vh;
 }
 
 .sep-div {
@@ -138,9 +138,19 @@ footer {
 }
 
 .title-animation {
-    animation-name: flickering-effect;
+/*    animation-name: flickering-effect;
     animation-duration: 1.8s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
+    text-shadow: 
+    2px 2px 6px var(--neon_orange),
+    0 0 10px var(--font_color),
+    -2px -2px 16px var(--neon_green),
+    0 2px 29px var(--neon_blue),
+    2px 0 45px var(--neon_purple),
+    -2px 0 89px var(--neon_blue),
+    0 -2px 98px var(--neon_green),
+    0 0 120px var(--neon_orange),
+    0 0 190px var(--neon_purple);
 }
 
 @keyframes flickering-effect {
