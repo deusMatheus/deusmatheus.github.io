@@ -4,10 +4,12 @@
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 :root {
     --bg_color: #000;
+    --bg_color_light: #333333;
     --font_color: #f1f1f1;
     --neon_blue: #1fffff;
     --neon_green: #39FF14;
@@ -15,6 +17,8 @@
     --neon_orange: #FF6700;
     --nav_bar: #1f1f1f22;
     --main_text_bg_color: #1f1f1f;
+    --transp_green: #38ff1425;
+    --transp_purple: #9400D325;
 }
 
 hr {
@@ -47,10 +51,15 @@ footer {
     font-size: 1.35vh;
 }
 
-.logo-ByteForge {
+.picture {
     display: inline-block;
-    max-height: 15vh;
+    max-height: 12.5vh;
+    max-width: 12.5vh;
     margin-left: 3.5vw;
+    margin-bottom: 1.5vh;
+    margin-top: 2.5vh;
+    border-radius: 99%;
+    border: thick double var(--neon_green);
 }
 
 .page-title{
@@ -68,8 +77,8 @@ footer {
 }
 
 .sep-div {
-    padding-top: 1.75vh;
-    padding-bottom: 1.75vh;
+    padding-top: .25vh;
+    padding-bottom: .5vh;
 }
 
 .title-div {
@@ -162,16 +171,29 @@ footer {
 
 .main-text {
     margin-top: 1vh;
-    padding-left: 2vw;
+    padding-left: 3.5vw;
     padding-right: 2vw;
     font-size: 2vh;
     text-align: justify;
     text-justify: inter-word;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     justify-content: start;
     background-color: var(--nav_bar);
     border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 75vh;
+}
+
+.services-title-div {
+    display: inline;
+    height: 80vh;
+}
+
+.contact-div{
+    display: block;
+    height: 80vh;
 }
 
 .main-text-paragraph{
@@ -247,4 +269,45 @@ footer {
 .landing-page-ul{
     margin-left: 3vw;
     list-style-type: square
+}
+
+.main-page-div{
+    height: 75vh;
+}
+
+.language-button-div {
+    display: inline-block;
+    margin-left: 70vw;
+    z-index: 99;
+}
+
+.language-button {
+    border: solid var(--neon_purple);
+    width: 10vw;
+    height: 5vh;
+    margin-top: 1vh;
+    background-color: var(--transp_purple);
+    color: var(--font_color);
+    font-size: 1.5vh;
+}
+
+.language-button:hover {
+    background-color: var(--neon_purple);
+}
+
+.technologies-list-ul{
+    display: block;
+    list-style: none;
+}
+
+.technologies-list-li{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 5vw;
 }
