@@ -193,7 +193,7 @@ footer {
     border-radius: 5px;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 60vh;
+    height: 75vh;
 }
 
 .services-title-div {
@@ -307,7 +307,7 @@ footer {
 }
 
 .technologies-list-ul{
-    display: block;
+    display: inline;
     list-style: none;
 }
 
