@@ -53,9 +53,9 @@ footer {
 
 .picture {
     display: inline-block;
-    max-height: 7.5vh;
-    max-width: 7.5vh;
-    margin-left: 3.5vw;
+    max-height: 7vh;
+    max-width: 7vh;
+    margin-left: 3vw;
     margin-bottom: 1.5vh;
     margin-top: 2.5vh;
     border-radius: 99%;
@@ -287,18 +287,18 @@ footer {
 
 .language-button-div {
     display: inline-block;
-    margin-left: 70vw;
+    margin-left: 60vw;
     z-index: 99;
 }
 
 .language-button {
     border: solid var(--neon_purple);
-    width: 10vw;
+    width: 8.5vw;
     height: 5vh;
     margin-top: 1vh;
     background-color: var(--transp_purple);
     color: var(--font_color);
-    font-size: 1.5vh;
+    font-size: 1vh;
 }
 
 .language-button:hover {
