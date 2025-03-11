@@ -283,6 +283,7 @@ footer {
 
 .main-page-div{
     height: 75vh;
+    display: block;
 }
 
 .language-button-div {
