@@ -111,6 +111,7 @@ footer {
     margin-right: 2vw;
     padding-left: .5vw;
     padding-right: .5vw;
+    font-size: 1.5vh;
 }
 
 .nav-link:link, .nav-link:visited {
@@ -214,7 +215,7 @@ footer {
       "wdth" 100;
     line-height: 25px;
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: .3vh;
 }
 
 .ByteForge {
@@ -319,7 +320,7 @@ footer {
     font-variation-settings:
       "wdth" 100;
     line-height: 25px;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-top: .1vh;
+    margin-bottom: .3vh;
     margin-left: 5vw;
 }
