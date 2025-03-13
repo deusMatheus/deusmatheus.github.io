@@ -338,8 +338,8 @@ footer {
 }
 
 .projects-pictures{
-    max-width: 70vw;
-    max-height: 60vh;
+    max-width: 85vw;
+    max-height: 80vh;
     border: solid var(--transp_green);
 }
 
