@@ -261,13 +261,13 @@ footer {
 }
 
 .button {
-    width: 3.15vh;
-    height: 3.15vh;
+    width: 2vh;
+    height: 2vh;
     display: inline;
     margin-left: 5vw;
     margin-right: 5vw;
     border-radius: 999px;
-    font-size: 2vh;
+    font-size: 1.2vh;
     border: none;
     background-color: var(--neon_orange);
 }
@@ -323,4 +323,32 @@ footer {
     margin-top: .1vh;
     margin-bottom: .3vh;
     margin-left: 5vw;
+}
+
+.experiences-div{
+    height: 80vh;
+}
+
+.projects-text-div{
+    text-align: justify;
+}
+
+.pictures-sales{
+    text-align: center;
+}
+
+.projects-pictures{
+    max-width: 70vw;
+    max-height: 60vh;
+    border: solid var(--transp_green);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}
+  
+@keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
 }
