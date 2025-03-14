@@ -66,14 +66,14 @@ footer {
     margin-left: 5vw;
     margin-right: 5vw;
     display: inline-block;
-    font-size: 3vh;
+    font-size: 2.8vh;
     font-weight: 900;
     color: var(--bg_color);
 }
 
 .page-subtitle {
     display: block;
-    font-size: 1.5vh;
+    font-size: 1.65vh;
 }
 
 .sep-div {
@@ -213,9 +213,9 @@ footer {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-    line-height: 25px;
-    margin-top: 15px;
-    margin-bottom: .3vh;
+    line-height: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
 .ByteForge {
@@ -319,9 +319,9 @@ footer {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-    line-height: 25px;
-    margin-top: .1vh;
-    margin-bottom: .3vh;
+    line-height: 6vh;
+    margin-top: 1.7vh;
+    margin-bottom: .85vh;
     margin-left: 5vw;
 }
 
@@ -335,12 +335,14 @@ footer {
 
 .pictures-sales{
     text-align: center;
+    overflow: hidden;
 }
 
 .projects-pictures{
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
+
 }
 
 .fade {
