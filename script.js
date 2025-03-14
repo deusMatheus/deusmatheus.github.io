@@ -10,6 +10,8 @@ let slideShowVar = document.getElementsByClassName('projects-pictures');
 let path = '';
 let extension = '';
 
+// let sources = '' -> Criar uma lista com as imagens anexadas no google drive. Realizar solicitações para cada imagem e só carregar efetivamente depois que a primeira for carregada. Enquanto isso, colocar timeout para mudar para a próxima imagem. 
+
 function removeFade() {
     slideShowVar[0].classList.remove('fade');
 }
