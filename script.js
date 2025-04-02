@@ -2,11 +2,15 @@
 //let nextButton = document.getElementById('next_service_button')
 
 // const IDsLength = 3;
-const IDsLength = 2;
+const IDsLength = 3;
 var actualService = 1;
-let currentSlide = 1;
-let lastSlide = 7;
-let slideShowVar = document.getElementsByClassName('projects-pictures');
+var currentSlide = 0; // 1
+var lastSlide = 0; // 7
+// let currentSlideGestao = 1;
+// let lastSlideGestao = 10;
+let slideShowVar = ''
+// let slideShowVar = document.getElementsByClassName('projects-pictures');
+// let slideShowVar = document.getElementsByClassName('projects-pictures-gestao');
 let path = '';
 let extension = '';
 
@@ -49,8 +53,19 @@ function nextButtonClick() {
     service.classList.remove('disabled');
     service.classList.add('enabled');
     if(actualService == 2) {
+        slideShowVar = document.getElementsByClassName('projects-pictures');
         path = 'files/vendas_';
         extension = '.png';
+        currentSlide = 1;
+        lastSlide = 7;
+        slideShow()
+    }
+    if(actualService == 3) {
+        slideShowVar = document.getElementsByClassName('projects-pictures-gestao');
+        path = 'files/gestao_pedidos_';
+        extension = '.png';
+        currentSlide = 1;
+        lastSlide = 10;
         slideShow()
     }
 }
@@ -68,8 +83,19 @@ function previousButtonClick(){
     service.classList.remove('disabled');
     service.classList.add('enabled');
     if(actualService == 2) {
+        slideShowVar = document.getElementsByClassName('projects-pictures');
         path = 'files/vendas_';
         extension = '.png';
+        currentSlide = 1;
+        lastSlide = 7;
+        slideShow()
+    }
+    if(actualService == 3) {
+        slideShowVar = document.getElementsByClassName('projects-pictures-gestao');
+        path = 'files/gestao_pedidos_';
+        extension = '.png';
+        currentSlide = 1;
+        lastSlide = 10;
         slideShow()
     }
 }

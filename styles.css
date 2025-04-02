@@ -344,7 +344,12 @@ footer {
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
+}
 
+.projects-pictures-gestao{
+    max-width: 85vw;
+    max-height: 80vh;
+    border: solid var(--transp_green);
 }
 
 .fade {
