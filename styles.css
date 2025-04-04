@@ -385,30 +385,30 @@ footer {
 
 @media only screen and (orientation: portrait){
     .page-title{
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     
     .page-subtitle {
-        font-size: 1em;
+        font-size: .9em;
     }
     .picture {
-        max-height: 7vh;
-        max-width: 7vh;
+        max-height: 5.5vh;
+        max-width: 5.5vh;
         margin-left: 2vw;
         margin-bottom: 1vh;
         margin-top: 2vh;    
     }
 
     .main-text {
-        font-size: 1.25em;
+        font-size: 1.01em;
     }
 
     .nav-ul-li{
-        font-size: .9em;
+        font-size: .8em;
     }
 
     .footer-div {
-        font-size: .9em;
+        font-size: .8em;
     }
        
 }
