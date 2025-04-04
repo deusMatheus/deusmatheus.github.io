@@ -14,8 +14,9 @@
     --neon_blue: #1fffff;
     --neon_green: #39FF14;
     --neon_purple: #9400D3;
+    --neon_purple_dark: #6100a0;
     --neon_orange: #FF6700;
-    --nav_bar: #1f1f1f22;
+    --nav_bar: #66666622;
     --main_text_bg_color: #1f1f1f;
     --transp_green: #38ff1425;
     --transp_purple: #9400D325;
@@ -48,13 +49,13 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1.35vh;
+    font-size: 1.15em;
 }
 
 .picture {
     display: inline-block;
-    max-height: 7vh;
-    max-width: 7vh;
+    max-height: 10vh;
+    max-width: 10vh;
     margin-left: 3vw;
     margin-bottom: 1.5vh;
     margin-top: 2.5vh;
@@ -66,14 +67,14 @@ footer {
     margin-left: 5vw;
     margin-right: 5vw;
     display: inline-block;
-    font-size: 2.8vh;
+    font-size: 3.5em;
     font-weight: 900;
     color: var(--bg_color);
 }
 
 .page-subtitle {
     display: block;
-    font-size: 1.65vh;
+    font-size: 1.5em;
 }
 
 .sep-div {
@@ -111,7 +112,7 @@ footer {
     margin-right: 2vw;
     padding-left: .5vw;
     padding-right: .5vw;
-    font-size: 1.5vh;
+    font-size: 1.1em;
 }
 
 .nav-link:link, .nav-link:visited {
@@ -181,25 +182,24 @@ footer {
 }
 
 .main-text {
-    padding-top: 5vh;
-    margin-top: 5vh;
+    padding-top: .5vh;
+    margin-top: 2.5vh;
     padding-left: 3.5vw;
     padding-right: 2vw;
-    font-size: 2.35vh;
+    font-size: 1.5em;
     text-align: justify;
     text-justify: inter-word;
     margin-left: 1vw;
     margin-right: 1vw;
     justify-content: start;
     background-color: var(--nav_bar);
-    border-radius: 5px;
+    border-radius: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 75vh;
 }
 
 .services-title-div {
-    padding-top: 10vh;
     display: block;
     height: 80vh;
 }
@@ -251,7 +251,8 @@ footer {
 
 .services-title {
     color: var(--neon_green);
-    display: inline;
+    display: block;
+    text-align: left;
 }
 
 .services-title-div{
@@ -262,14 +263,22 @@ footer {
     margin-right: 5vw;
 }
 
-.button {
-    width: 2vh;
-    height: 2vh;
+.left-button-li{
     display: inline;
-    margin-left: 5vw;
-    margin-right: 5vw;
+
+}
+
+.right-button-li{
+    display: inline;
+    margin-left: 70vw;
+}
+
+.button {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline;
     border-radius: 999px;
-    font-size: 1.2vh;
+    font-size: .75em;
     border: none;
     background-color: var(--neon_orange);
 }
@@ -288,25 +297,33 @@ footer {
     height: 95vh;
     display: inline;
 }
+.empty-space{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
 
 .language-button-div {
     display: inline-block;
-    margin-left: 60vw;
+    position: fixed;
+    right: 0;
+    margin-right: 5vw;
     z-index: 99;
 }
 
 .language-button {
     border: solid var(--neon_purple);
-    width: 8.5vw;
+    width: 4vw;
     height: 5vh;
     margin-top: 1vh;
     background-color: var(--transp_purple);
     color: var(--font_color);
-    font-size: 1vh;
+    font-size: .8em;
 }
 
 .language-button:hover {
     background-color: var(--neon_purple);
+    cursor: pointer;
+    border-color: var(--neon_purple_dark);
 }
 
 .technologies-list-ul{
@@ -364,4 +381,34 @@ footer {
 
 .services-div{
     display: inline;
+}
+
+@media only screen and (orientation: portrait){
+    .page-title{
+        font-size: 1.75em;
+    }
+    
+    .page-subtitle {
+        font-size: 1em;
+    }
+    .picture {
+        max-height: 7vh;
+        max-width: 7vh;
+        margin-left: 2vw;
+        margin-bottom: 1vh;
+        margin-top: 2vh;    
+    }
+
+    .main-text {
+        font-size: 1.25em;
+    }
+
+    .nav-ul-li{
+        font-size: .9em;
+    }
+
+    .footer-div {
+        font-size: .9em;
+    }
+       
 }

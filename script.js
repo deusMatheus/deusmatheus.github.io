@@ -1,16 +1,11 @@
 //let previousButton = document.getElementById('previous_service_button')
 //let nextButton = document.getElementById('next_service_button')
 
-// const IDsLength = 3;
 const IDsLength = 3;
 var actualService = 1;
-var currentSlide = 0; // 1
-var lastSlide = 0; // 7
-// let currentSlideGestao = 1;
-// let lastSlideGestao = 10;
+var currentSlide = 0;
+var lastSlide = 0;
 let slideShowVar = ''
-// let slideShowVar = document.getElementsByClassName('projects-pictures');
-// let slideShowVar = document.getElementsByClassName('projects-pictures-gestao');
 let path = '';
 let extension = '';
 

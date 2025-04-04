@@ -17,8 +17,8 @@
 <body>
     <header class="header">
         <div>
-            <a class="" href="../">
-                <img class="picture" src="../files/picture.jpeg" alt="picture">
+            <a href="../">
+                <img class="picture" src="../files/picture.jpeg">
             </a>    
         </div>
         <div class="title-div" id="title-div">
@@ -35,23 +35,23 @@
     <nav class="nav-bar">
         <ul class="nav-ul">
             <li class="nav-ul-li">
-                <a class="nav-link" href="#main-page-div">< Introdução ></a>
+                <a class="nav-link" href="#intro">< Introdução ></a>
             </li>
             <li class="nav-ul-li">
-                <a class="nav-link" href="#services-title-div">< Projetos ></a>
+                <a class="nav-link" href="#services">< Projetos ></a>
             </li><!--
             <li class="nav-ul-li">
                 <a class="nav-link" href="#experiences-title-div">< Experiências ></a>
             </li>-->
             <li class="nav-ul-li">
-                <a class="nav-link" href="#contact-div">< Contato ></a>
+                <a class="nav-link" href="#contact">< Contato ></a>
             </li>
         </ul>
     </nav>
     <hr>
 
     <div class="main-text">
-        <div class="main-page-div" id="main-page-div">
+        <div class="main-page-div" id="intro">
             <p class="services-title">Introdução</p>
             <p class="main-text-paragraph">
                 Sou um desenvolvedor brasileiro que gosta de solucionar problemas e programar em diferentes linguagens e tecnologias. Originalmente formado em Licenciatura em Física, possuo alta capacidade analítica na resolução de situações do cotidiano. Além de ter lecionado a disciplina de Física para turmas do ensino médio, também lecionei conceitos de programação, robótica e pensamento computacional.  
@@ -107,16 +107,18 @@
             <p class="main-text-paragraph">Se você busca um parceiro estratégico para levar suas ideias para o próximo nível, a <b class="ByteForge">ByteForge</b> é a escolha certa. Entre em contato e vamos juntos forjar seu futuro digital!
             </p>-->
         </div>
+        <div class="empty-space"></div>
         <hr>
-        <div class="services-title-div" id="services-title-div">
+        <div class="services-title-div" id="services">
+            <p class="services-title">Projetos</p>
             <ul class="nav-ul">
-                <li class="nav-ul-li">
+                <li class="left-button-li">
                     <button onclick="previousButtonClick()" class="button" id="previous_service_button"> < </button>
-                </li>
+                </li><!--
                 <li class="nav-ul-li">
                     <p class="services-title">Projetos</p>
-                </li>
-                <li class="nav-ul-li">
+                </li>-->
+                <li class="right-button-li">
                     <button onclick="nextButtonClick()" class="button" id="next_service_button"> > </button>
                 </li>
             </ul>
@@ -164,13 +166,13 @@
                         <div class="projects-text-div">
                             <p class="main-text-paragraph">Este é um sistema onde é possível cadastrar pratos, lanches e pedidos dos clientes. Os clientes têm acesso somente ao cardápio que pode ser acessado através de QRCode. O software conta com sistema de login com diferentes acessos, como <b>Caixa</b>, <b>Produção</b> e <b>Administração</b>.
                                 <ul style="list-style: none; margin-left: 1.25em;">
-                                    <li>
+                                    <li class="main-text-paragraph">
                                         O usuário <b>Caixa</b> realiza os pedidos e recebe o pagamento dos clientes, informando o método de pagamento. Para o caso de pagamento em dinheiro, o sistema calcula o troco automaticamente! 
                                     </li>
-                                    <li>
+                                    <li class="main-text-paragraph">
                                         O usuário <b>Produção</b> verifica os pedidos que estão na fila para serem produzidos. Este usuário pode alterar o estado dos pedidos de "Na fila" para "Em produção", e de "Em produção" para "Finalizado". Dessa forma, clientes podem verificar o estado através do Cardápio, informando o código do mesmo e obtendo assim a descrição com os itens e o estado atual.
                                     </li>
-                                    <li>
+                                    <li class="main-text-paragraph">
                                         O usuário <b>Administração</b> tem acesso às funções dos outros usuários além de poder cadastrar e excluir produtos. Ainda, é possível retirar relatórios de vendas determinando um período, para que possa verificar a quantidade de itens vendidos neste período, podendo organizar melhor seu negócio de acordo com a demanda.
                                     </li>
                                 </ul>
@@ -192,11 +194,11 @@
                     </li>
                     <li id="service-4" class="disabled">
                         <h3>
-                            Geração de gráficos através de equações
+                            Geração de gráficos
                         </h3>
                         <div class="projects-text-div">
                             <p class="main-text-paragraph">
-                                Utilizando bibliotecas como MatPlotLib sou capaz de gerar gráficos para diferentes cenários.
+                                Utilizando bibliotecas como MatPlotLib, NumPy e outras é possível gerar gráficos para diferentes cenários. Estes cenários incluem o plot de equações diferenciais, funções diversas e até mesmo gráficos baseados em dados coletados. 
                             </p>
                             <p class="main-text-paragraph">
                                 Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
@@ -207,6 +209,7 @@
                 </ul>
             </div>
         </div>
+        <div class="empty-space"></div>
         <hr><!--
         <div class="experiences-div" id="experiences-title-div">
             <p class="services-title">Experiências</p>
@@ -215,12 +218,12 @@
             <p class="main-text-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est modi? Ducimus voluptas quod dolor, eius nulla corrupti sequi illum sunt nemo ut cupiditate ab distinctio. Ea non voluptates quod?</p>
         </div>
         <hr>-->
-        <div class="contact-div" id="contact-div">
+        <div class="contact-div" id="contact">
             <p class="services-title">Contato</p>
             <p class="main-text-paragraph">Em caso de dúvidas ou na busca de um orçamento, entre em contato através de um dos meios disponíveis!
             <p class="main-text-paragraph">E-mail: deus.mj94@gmail.com</p>
             <p class="main-text-paragraph">Whatsapp: +55 27 99288-1999</p>
-            <p class="main-text-paragraph">Linkedin: https://www.linkedin.com/in/matheus-jos%C3%A9-de-deus-063b85183/</p>
+            <p class="main-text-paragraph">Linkedin: <a target="_blank" href="https://www.linkedin.com/in/matheus-jos%C3%A9-de-deus-063b85183/">https://www.linkedin.com/matheus-deus/</a></p>
         </div>
     </div>
 
