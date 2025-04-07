@@ -411,5 +411,10 @@ footer {
     .footer-div {
         font-size: .8em;
     }
-       
+
+    .language-button {
+        width: 3.5em;
+        height: 4.5em;
+        font-size: .5em;
+    }
 }
