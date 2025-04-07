@@ -83,7 +83,7 @@ footer {
 }
 
 .title-div {
-    display: inline-block;
+    display: block;
     position: absolute;
     text-align: center;
     left: 0;
@@ -97,6 +97,7 @@ footer {
 }
 
 .nav-bar {
+    display: block;
     background-color: var(--nav_bar);
     text-align: center;
 }
@@ -246,7 +247,7 @@ footer {
 }
 
 .enabled {
-    display: inline;
+    display: inline-block;
 }
 
 .services-title {

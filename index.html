@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body data-theme="ptbr">
     <header class="header">
         <div>
             <a href="../">
@@ -22,193 +22,304 @@
             </a>    
         </div>
         <div class="title-div" id="title-div">
-            <h1 class="page-title title-animation neonText">< Matheus Deus ></h1>
+            <a href="../">
+                <h1 class="page-title title-animation neonText">< Matheus Deus ></h1>
+            </a>
             <div class="sep-div"></div>
-            <h5 class="page-subtitle title-animation">Desenvolvedor de Software</h5>
-        </div><!--
+            <div class="ptbr">
+                <h5 class="page-subtitle title-animation">Desenvolvedor de Software</h5>
+            </div>
+            <div class="enus disabled">
+                <h5 class="page-subtitle title-animation">Software Developer</h5>
+            </div>
+        </div>
         <div class="language-button-div">
-            <button class="language-button">PT-BR</button>
-            <button class="language-button">EN-US</button>
-        </div>-->
+            <button onclick="setPTBR()" id="set-ptbr-button" class="language-button">PT-BR</button>
+            <button onclick="setENUS()" id="set-enus-button" class="language-button">EN-US</button>
+        </div>
     </header>
     <hr>
     <nav class="nav-bar">
         <ul class="nav-ul">
-            <li class="nav-ul-li">
+            <li class="nav-ul-li ptbr">
                 <a class="nav-link" href="#intro">< Introdução ></a>
             </li>
-            <li class="nav-ul-li">
+            <li class="nav-ul-li ptbr">
                 <a class="nav-link" href="#services">< Projetos ></a>
-            </li><!--
-            <li class="nav-ul-li">
-                <a class="nav-link" href="#experiences-title-div">< Experiências ></a>
-            </li>-->
-            <li class="nav-ul-li">
+            </li>
+            <li class="nav-ul-li ptbr">
                 <a class="nav-link" href="#contact">< Contato ></a>
             </li>
+
+            <li class="nav-ul-li enus disabled">
+                <a class="nav-link" href="#intro">< Introduction ></a>
+            </li>
+            <li class="nav-ul-li enus disabled">
+                <a class="nav-link" href="#services">< Projects ></a>
+            </li>
+            <li class="nav-ul-li enus disabled">
+                <a class="nav-link" href="#contact">< Contact ></a>
         </ul>
     </nav>
     <hr>
 
     <div class="main-text">
-        <div class="main-page-div" id="intro">
-            <p class="services-title">Introdução</p>
-            <p class="main-text-paragraph">
-                Sou um desenvolvedor brasileiro que gosta de solucionar problemas e programar em diferentes linguagens e tecnologias. Originalmente formado em Licenciatura em Física, possuo alta capacidade analítica na resolução de situações do cotidiano. Além de ter lecionado a disciplina de Física para turmas do ensino médio, também lecionei conceitos de programação, robótica e pensamento computacional.  
-            </p>
-            <p class="main-text-paragraph">
-                Abaixo listo as diferentes linguagens e tecnologias que sou proficiente:
-            </p>
-            <ul class="technologies-list-ul">
-                <li class="technologies-list-li">
-                    <b>Linguagens:</b> Python, Javascript, HTML, CSS, C, Scratch/Low Code
-                </li>
-                <li class="technologies-list-li">
-                    <b>Banco de Dados:</b> MySQL, PostgreSQL, MongoDB
-                </li>
-                <li class="technologies-list-li">
-                    <b>Bibliotecas</b>: NumPy, Pandas, MatPlotLib
-                </li>
-                <li class="technologies-list-li">
-                    <b>Ferramentas/Tecnologias</b>: Streamlit, Git, Heroku, Lego Robotics 
-                </li>
-            </ul>
-            <!--
-            <p class="main-text-paragraph"><b class="ByteForge">ByteForge</b> é uma SoftwareHouse que nasceu para desenvolver softwares, sistemas e aplicativos eficientes e sob medida para cada desafio apresentado. De acordo com o  <a class="main-text-paragraph nav-link" href="https://dictionary.cambridge.org/us/dictionary/english/software-house" target="_blank">Cambridge Dictionary</a>, <q class="main-text-paragraph quote">uma software house é uma empresa que escreve e vende software</q>.</p>
-
-            <p class="main-text-paragraph"><b class="ByteForge">Byte</b> indica uma unidade básica de dados em computação, normalmente referindo-se à quantidade de informaçẽos digitais e que representa o mundo digital, enquanto <b class="ByteForge">Forge</b> simboliza a arte de moldar e forjar tecnologia para atender às demandas.</p>
-
-            <p class="main-text-paragraph">
-                <h2>Por que a <b class="ByteForge">ByteForge?</b></h4>
-            </p>
-            
-            <ul class="main-text-ul">
-                <li class="main-text-li">
+        <div id="intro">
+            <div class="ptbr">
+                <div class="main-page-div">
+                    <p class="services-title">Introdução</p>
                     <p class="main-text-paragraph">
-                        Desenvolvimento sob medida - Criamos soluções adaptadas às suas necessidades.
+                        Sou um desenvolvedor brasileiro que gosta de solucionar problemas e programar em diferentes linguagens e tecnologias. Originalmente formado em Licenciatura em Física, possuo alta capacidade analítica na resolução de situações do cotidiano. Além de ter lecionado a disciplina de Física para turmas do ensino médio, também lecionei conceitos de programação, robótica e pensamento computacional.  
                     </p>
-                </li>
-                <li class="main-text-li">
                     <p class="main-text-paragraph">
-                        Tecnologia de ponta - Utilizamos as melhores práticas, ferramentas e linguagens do mercado.
+                        Abaixo listo as diferentes linguagens e tecnologias que sou proficiente:
                     </p>
-                </li>
-                <li class="main-text-li">
+                    <ul class="technologies-list-ul">
+                        <li class="technologies-list-li">
+                            <b>Linguagens:</b> Python, Javascript, HTML, CSS, C, Scratch/Low Code
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Banco de Dados:</b> MySQL, PostgreSQL, MongoDB
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Bibliotecas</b>: NumPy, Pandas, MatPlotLib
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Ferramentas/Tecnologias</b>: Streamlit, Git, Heroku, Lego Robotics 
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="enus disabled">
+                <div class="main-page-div">
+                    <p class="services-title">Introduction</p>
                     <p class="main-text-paragraph">
-                        Eficiência e confiabilidade - Softwares sólidos, seguros e otimizados.
+                        I'm a brazilian developer who likes to solve problems and code in different languages and technologies. Formerly graduated in Physics, I have high analytical perception for solving everyday problems. I teached Physics, Programming Concepts, Computational Thinking and Robotics to students at brazilian High School.
                     </p>
-                </li>
-                <li class="main-text-li">
                     <p class="main-text-paragraph">
-                        Inovação contínua - Estamos sempre à frente, explorando novas possibilidades tecnológicas.
+                        The different languages and technologies I'm proficient with are listed below:
                     </p>
-                </li>
-            </ul>
-            <p class="main-text-paragraph">Se você busca um parceiro estratégico para levar suas ideias para o próximo nível, a <b class="ByteForge">ByteForge</b> é a escolha certa. Entre em contato e vamos juntos forjar seu futuro digital!
-            </p>-->
-        </div>
-        <div class="empty-space"></div>
-        <hr>
-        <div class="services-title-div" id="services">
-            <p class="services-title">Projetos</p>
-            <ul class="nav-ul">
-                <li class="left-button-li">
-                    <button onclick="previousButtonClick()" class="button" id="previous_service_button"> < </button>
-                </li><!--
-                <li class="nav-ul-li">
-                    <p class="services-title">Projetos</p>
-                </li>-->
-                <li class="right-button-li">
-                    <button onclick="nextButtonClick()" class="button" id="next_service_button"> > </button>
-                </li>
-            </ul>
-            <div class="services-div">
-                <ul class="nav-ul">
-                    <li id="service-1" class="enabled">
-                        <h3>
-                            Landing Page
-                        </h3>
-                        <div class="projects-text-div">
-                            <p class="main-text-paragraph">Uma Landing Page (ou Página de Destino) é uma página da internet criada com um objetivo específico: converter visitantes em clientes ou interessados. Diferente de um site tradicional, que pode ter várias seções e informações, uma página de destino é direta e focada, geralmente com uma única chamada para ação, como:
-                            </p>
-                            <ul class="landing-page-ul">
-                                <li>
-                                    <p class="main-text-paragraph">Capturar e-mails para uma lista de contatos</p>
-                                </li>
-                                <li>
-                                    <p class="main-text-paragraph">Oferecer um livro digital ou material gratuito</p>
-                                </li>
-                                <li>
-                                    <p class="main-text-paragraph">Apresentar e vender um produto ou serviço</p>
-                                </li>
-                                <li>
-                                    <p class="main-text-paragraph">Inscrever usuários em um evento ou palestra online</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li id="service-2" class="disabled">
-                        <h3>
-                            Sistema de vendas de produtos
-                        </h3>
-                        <div class="projects-text-div">
-                            <p class="main-text-paragraph">Este é um sistema onde é possível realizar o cadastro de produtos  para controle fincaneiro de vendas realizadas. Aliado à isso, há a possibilidade de cadastro de funcionários com login e senha próprio. O gestor deste sistema tem acesso às vendas de cada funcionário além de poder realizar o cadastro e exclusão dos produtos. Confira abaixo algumas imagens mostrando a interface básica do software com algumas funções, onde o design é totalmente personalizável!
-                        </p>
-                        <div class="pictures-sales">
-                            <img class="projects-pictures" src="files/vendas_1.png" alt="">
-                        </div>
-                        </div>
-                    </li>
-                    <li id="service-3" class="disabled">
-                        <h3>
-                            Sistema de gestão de pedidos para restaurantes e pequenos negócios
-                        </h3>
-                        <div class="projects-text-div">
-                            <p class="main-text-paragraph">Este é um sistema onde é possível cadastrar pratos, lanches e pedidos dos clientes. Os clientes têm acesso somente ao cardápio que pode ser acessado através de QRCode. O software conta com sistema de login com diferentes acessos, como <b>Caixa</b>, <b>Produção</b> e <b>Administração</b>.
-                                <ul style="list-style: none; margin-left: 1.25em;">
-                                    <li class="main-text-paragraph">
-                                        O usuário <b>Caixa</b> realiza os pedidos e recebe o pagamento dos clientes, informando o método de pagamento. Para o caso de pagamento em dinheiro, o sistema calcula o troco automaticamente! 
-                                    </li>
-                                    <li class="main-text-paragraph">
-                                        O usuário <b>Produção</b> verifica os pedidos que estão na fila para serem produzidos. Este usuário pode alterar o estado dos pedidos de "Na fila" para "Em produção", e de "Em produção" para "Finalizado". Dessa forma, clientes podem verificar o estado através do Cardápio, informando o código do mesmo e obtendo assim a descrição com os itens e o estado atual.
-                                    </li>
-                                    <li class="main-text-paragraph">
-                                        O usuário <b>Administração</b> tem acesso às funções dos outros usuários além de poder cadastrar e excluir produtos. Ainda, é possível retirar relatórios de vendas determinando um período, para que possa verificar a quantidade de itens vendidos neste período, podendo organizar melhor seu negócio de acordo com a demanda.
-                                    </li>
-                                </ul>
-                        </p>
-                        <div class="pictures-sales">
-                            <img class="projects-pictures-gestao" src="files/gestao_pedidos_1.png" alt="">
-                        </div>
-                        </div>
-                    </li>
-                    <!-- <li id="service-3" class="disabled">-->
-                    <li id="service-3xx" class="disabled">
-                            <h3>
-                            Cardápio online personalizado
-                        </h3>
-                        <div class="projects-text-div">
-                            <p class="main-text-paragraph">Para pequenos restaurantes que preferem um cardápio online acessado através do QRCode. Os pedidos são feitos no próprio estabelecimento, mas todos os itens do cardápio possuem valores e descrição dos ingredientes. Totalmente personalizável, o que garante a identidade do seu restaurante. Consultar a possibilidade de pedidos pelo próprio cardápio.
-                        </p>
-                        </div>
-                    </li>
-                    <li id="service-4" class="disabled">
-                        <h3>
-                            Geração de gráficos
-                        </h3>
-                        <div class="projects-text-div">
-                            <p class="main-text-paragraph">
-                                Utilizando bibliotecas como MatPlotLib, NumPy e outras é possível gerar gráficos para diferentes cenários. Estes cenários incluem o plot de equações diferenciais, funções diversas e até mesmo gráficos baseados em dados coletados. 
-                            </p>
-                            <p class="main-text-paragraph">
-                                Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
-                            </p>
-                        </div>
-                    </li>
-
-                </ul>
+                    <ul class="technologies-list-ul">
+                        <li class="technologies-list-li">
+                            <b>Languages:</b> Python, Javascript, HTML, CSS, C, Scratch/Low Code
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Database:</b> MySQL, PostgreSQL, MongoDB
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Libraries</b>: NumPy, Pandas, MatPlotLib
+                        </li>
+                        <li class="technologies-list-li">
+                            <b>Tools & Technologies</b>: Streamlit, Git, Heroku, Lego Robotics 
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <div class="empty-space"></div>
+        <hr>
+        <div id="services">
+            <div class="ptbr">
+                <div class="services-title-div">
+                    <p class="services-title">Projetos</p>
+                    <ul class="nav-ul">
+                        <li class="left-button-li">
+                            <button onclick="previousButtonClick()" class="button"> < </button>
+                        </li>
+                        <li class="right-button-li">
+                            <button onclick="nextButtonClick()" class="button"> > </button>
+                        </li>
+                    </ul>
+                    <div class="services-div">
+                        <ul class="nav-ul">
+                            <li id="service-1" class="enabled">
+                                <h3>
+                                    Landing Page
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">Uma Landing Page (ou Página de Destino) é uma página da internet criada com um objetivo específico: converter visitantes em clientes ou interessados. Diferente de um site tradicional, que pode ter várias seções e informações, uma página de destino é direta e focada, geralmente com uma única chamada para ação, como:
+                                    </p>
+                                    <ul class="landing-page-ul">
+                                        <li>
+                                            <p class="main-text-paragraph">Capturar e-mails para uma lista de contatos</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Oferecer um livro digital ou material gratuito</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Apresentar e vender um produto ou serviço</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Inscrever usuários em um evento ou palestra online</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="service-2" class="disabled">
+                                <h3>
+                                    Sistema de vendas de produtos
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">Este é um sistema onde é possível realizar o cadastro de produtos  para controle fincaneiro de vendas realizadas. Aliado à isso, há a possibilidade de cadastro de funcionários com login e senha próprio. O gestor deste sistema tem acesso às vendas de cada funcionário além de poder realizar o cadastro e exclusão dos produtos. Confira abaixo algumas imagens mostrando a interface básica do software com algumas funções, onde o design é totalmente personalizável!
+                                </p>
+                                <div class="pictures-sales">
+                                    <img class="projects-pictures" src="files/vendas_1.png" alt="">
+                                </div>
+                                </div>
+                            </li>
+                            <li id="service-3" class="disabled">
+                                <h3>
+                                    Sistema de gestão de pedidos para restaurantes e pequenos negócios
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">Este é um sistema onde é possível cadastrar pratos, lanches e pedidos dos clientes. Os clientes têm acesso somente ao cardápio que pode ser acessado através de QRCode. O software conta com sistema de login com diferentes acessos, como <b>Caixa</b>, <b>Produção</b> e <b>Administração</b>.
+                                        <ul style="list-style: none; margin-left: 1.25em;">
+                                            <li class="main-text-paragraph">
+                                                O usuário <b>Caixa</b> realiza os pedidos e recebe o pagamento dos clientes, informando o método de pagamento. Para o caso de pagamento em dinheiro, o sistema calcula o troco automaticamente! 
+                                            </li>
+                                            <li class="main-text-paragraph">
+                                                O usuário <b>Produção</b> verifica os pedidos que estão na fila para serem produzidos. Este usuário pode alterar o estado dos pedidos de "Na fila" para "Em produção", e de "Em produção" para "Finalizado". Dessa forma, clientes podem verificar o estado através do Cardápio, informando o código do mesmo e obtendo assim a descrição com os itens e o estado atual.
+                                            </li>
+                                            <li class="main-text-paragraph">
+                                                O usuário <b>Administração</b> tem acesso às funções dos outros usuários além de poder cadastrar e excluir produtos. Ainda, é possível retirar relatórios de vendas determinando um período, para que possa verificar a quantidade de itens vendidos neste período, podendo organizar melhor seu negócio de acordo com a demanda.
+                                            </li>
+                                        </ul>
+                                </p>
+                                <div class="pictures-sales">
+                                    <img class="projects-pictures-gestao" src="files/gestao_pedidos_1.png" alt="">
+                                </div>
+                                </div>
+                            </li>
+                            <!-- <li id="service-3" class="disabled">-->
+                            <li id="service-3xx" class="disabled">
+                                    <h3>
+                                    Cardápio online personalizado
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">Para pequenos restaurantes que preferem um cardápio online acessado através do QRCode. Os pedidos são feitos no próprio estabelecimento, mas todos os itens do cardápio possuem valores e descrição dos ingredientes. Totalmente personalizável, o que garante a identidade do seu restaurante. Consultar a possibilidade de pedidos pelo próprio cardápio.
+                                </p>
+                                </div>
+                            </li>
+                            <li id="service-4" class="disabled">
+                                <h3>
+                                    Geração de gráficos
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">
+                                        Utilizando bibliotecas como MatPlotLib, NumPy e outras é possível gerar gráficos para diferentes cenários. Estes cenários incluem o plot de equações diferenciais, funções diversas e até mesmo gráficos baseados em dados coletados. 
+                                    </p>
+                                    <p class="main-text-paragraph">
+                                        Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
+                                    </p>
+                                </div>
+                            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="enus disabled">
+                <div class="services-title-div">
+                    <p class="services-title">Projects</p>
+                    <ul class="nav-ul">
+                        <li class="left-button-li">
+                            <button onclick="previousButtonClick()" class="button"> < </button>
+                        </li>
+                        <li class="right-button-li">
+                            <button onclick="nextButtonClick()" class="button"> > </button>
+                        </li>
+                    </ul>
+                    <div class="services-div">
+                        <ul class="nav-ul">
+                            <li id="en-service-1" class="enabled">
+                                <h3>
+                                    Landing Page
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph"> A Landing Page is a website with a main goal: convert visitors into clients or interested into a product. A Landing Page is focused through a call for action, such as:
+                                    </p>
+                                    <ul class="landing-page-ul">
+                                        <li>
+                                            <p class="main-text-paragraph">Register e-mails for a contact list.</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Offer a digital book or free material.</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Present and sell a product or service.</p>
+                                        </li>
+                                        <li>
+                                            <p class="main-text-paragraph">Sign up users for an event or lecture.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="en-service-2" class="disabled">
+                                <h3>
+                                    Sales software system
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">This is a system where the main user can register products and sales for financial control for it's business. Workers can be registered as well, with unique usernames and passwords. The manager can see all sales of each worker and generate reports by specifying a date range. See some images below showing the basic interface, where it could be adapted and customized to your needs!
+                                </p>
+                                <div class="pictures-sales">
+                                    <img class="projects-pictures" src="files/vendas_1.png" alt="">
+                                </div>
+                                </div>
+                            </li>
+                            <li id="en-service-3" class="disabled">
+                                <h3>
+                                    Orders software system for restaurants and local business
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">This system enables to register plates, snacks, fast food and clients orders. The clients can see the restaurant menu through a QRCode. The system have different levels of permission, the main beign the <b>Cashier</b>, <b>Production</b> and <b>Management</b>.
+                                        <ul style="list-style: none; margin-left: 1.25em;">
+                                            <li class="main-text-paragraph">
+                                                The <b>Cashier</b> user makes the client orders and recieves the payment, and can register the payment form (card, money...). If the payment is done by money, the system automatically calculates the change! 
+                                            </li>
+                                            <li class="main-text-paragraph">
+                                                The <b>Production</b> user can see which orders are in queue. This user can alter a order status from "Queue" to "In Production", and from "In Production" to "Finished". By doing this, the clients can verify the order status by informing the order number at the Menu, getting the items description and current status.
+                                            </li>
+                                            <li class="main-text-paragraph">
+                                                The <b>Management</b> user has all the other users functionalities, and can also register and delete products from the menu. Finally, this user can generate reports by informing a data range, getting the number of items sold and all sales in given data.
+                                            </li>
+                                        </ul>
+                                </p>
+                                <div class="pictures-sales">
+                                    <img class="projects-pictures-gestao" src="files/gestao_pedidos_1.png" alt="">
+                                </div>
+                                </div>
+                            </li>
+                            <!-- <li id="service-3" class="disabled">-->
+                            <li id="service-3xx" class="disabled">
+                                    <h3>
+                                        ENGLISH TEXT GOES HERE Cardápio online personalizado
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">ENGLISH TEXT GOES HERE Para pequenos restaurantes que preferem um cardápio online acessado através do QRCode. Os pedidos são feitos no próprio estabelecimento, mas todos os itens do cardápio possuem valores e descrição dos ingredientes. Totalmente personalizável, o que garante a identidade do seu restaurante. Consultar a possibilidade de pedidos pelo próprio cardápio.
+                                </p>
+                                </div>
+                            </li>
+                            <li id="en-service-4" class="disabled">
+                                <h3>
+                                    Generating graphics
+                                </h3>
+                                <div class="projects-text-div">
+                                    <p class="main-text-paragraph">
+                                        Using libraries such as MatPlotLib and NumPy it's possible to generate graphics for different scenarios that includes differential equation plots, general functions and plots on collected data. 
+                                    </p>
+                                    <p class="main-text-paragraph">
+                                        ENGLISH TEXT GOES HERE Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
         <div class="empty-space"></div>
         <hr><!--
         <div class="experiences-div" id="experiences-title-div">
@@ -218,12 +329,25 @@
             <p class="main-text-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, est modi? Ducimus voluptas quod dolor, eius nulla corrupti sequi illum sunt nemo ut cupiditate ab distinctio. Ea non voluptates quod?</p>
         </div>
         <hr>-->
-        <div class="contact-div" id="contact">
-            <p class="services-title">Contato</p>
-            <p class="main-text-paragraph">Em caso de dúvidas ou na busca de um orçamento, entre em contato através de um dos meios disponíveis!
-            <p class="main-text-paragraph">E-mail: deus.mj94@gmail.com</p>
-            <p class="main-text-paragraph">Whatsapp: +55 27 99288-1999</p>
-            <p class="main-text-paragraph">Linkedin: <a target="_blank" href="https://www.linkedin.com/in/matheus-jos%C3%A9-de-deus-063b85183/">https://www.linkedin.com/matheus-deus/</a></p>
+        <div id="contact">
+            <div class="ptbr">
+                <div class="contact-div">
+                    <p class="services-title">Contato</p>
+                    <p class="main-text-paragraph">Em caso de dúvidas ou na busca de um orçamento, entre em contato através de um dos meios disponíveis!
+                    <p class="main-text-paragraph">E-mail: <a class="nav-link" href="mailto:deus.mj94@gmail.com">deus.mj94@gmail.com</a></p>
+                    <p class="main-text-paragraph">Whatsapp: <a class="nav-link" target="_blank" href="https://wa.me/5527992881999">+55 27 99288-1999</a></p>
+                    <p class="main-text-paragraph">LinkedIn: <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/matheus-jos%C3%A9-de-deus-063b85183/">https://www.linkedin.com/matheus-deus/</a></p>
+                </div>    
+            </div>
+            <div class="enus disabled">
+                <div class="contact-div">
+                    <p class="services-title">Contact</p>
+                    <p class="main-text-paragraph">To estimate the price of a service, get in touch using any way listed below.
+                    <p class="main-text-paragraph">E-mail: <a class="nav-link" href="mailto:deus.mj94@gmail.com">deus.mj94@gmail.com</a></p>
+                    <p class="main-text-paragraph">Whatsapp: <a class="nav-link" target="_blank" href="https://wa.me/5527992881999">+55 27 99288-1999</a></p>
+                    <p class="main-text-paragraph">LinkedIn: <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/matheus-jos%C3%A9-de-deus-063b85183/">https://www.linkedin.com/matheus-deus/</a></p>
+                </div>    
+            </div>
         </div>
     </div>
 
