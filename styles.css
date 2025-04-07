@@ -63,6 +63,11 @@ footer {
     border: thick double var(--neon_green);
 }
 
+.self-picture{
+    left: 0;
+    position: fixed;
+}
+
 .page-title{
     margin-left: 5vw;
     margin-right: 5vw;
@@ -73,7 +78,7 @@ footer {
 }
 
 .page-subtitle {
-    display: block;
+    display: inline;
     font-size: 1.5em;
 }
 
@@ -83,8 +88,7 @@ footer {
 }
 
 .title-div {
-    display: block;
-    position: absolute;
+    display: inline;
     text-align: center;
     left: 0;
     right: 0;
@@ -92,12 +96,14 @@ footer {
 }
 
 .header {
-    display: flex;
+    display: inline-flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-bar {
-    display: block;
+    display: inline-block;
     background-color: var(--nav_bar);
     text-align: center;
 }
@@ -201,7 +207,7 @@ footer {
 }
 
 .services-title-div {
-    display: block;
+    display: inline;
     height: 80vh;
 }
 
@@ -305,7 +311,7 @@ footer {
 
 .language-button-div {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     right: 0;
     margin-right: 5vw;
     z-index: 99;
@@ -313,8 +319,8 @@ footer {
 
 .language-button {
     border: solid var(--neon_purple);
-    width: 4vw;
-    height: 5vh;
+    width: 3em;
+    height: 4em;
     margin-top: 1vh;
     background-color: var(--transp_purple);
     color: var(--font_color);
@@ -393,8 +399,8 @@ footer {
         font-size: .9em;
     }
     .picture {
-        max-height: 5.5vh;
-        max-width: 5.5vh;
+        max-height: 4.5vh;
+        max-width: 4.5vh;
         margin-left: 2vw;
         margin-bottom: 1vh;
         margin-top: 2vh;    
@@ -413,12 +419,12 @@ footer {
     }
 
     .language-button-div {
-        margin-right: 2.5vw;
+        margin-right: 1.5vw;
     }
     
     .language-button {
-        width: 3.5em;
-        height: 4.5em;
-        font-size: .5em;
+        width: 3.25em;
+        height: 4.25em;
+        font-size: .45em;
     }
 }
