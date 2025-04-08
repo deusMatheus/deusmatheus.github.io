@@ -364,13 +364,13 @@ footer {
     overflow: hidden;
 }
 
-.projects-pictures{
+.projects-pictures, .en-projects-pictures{
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
 }
 
-.projects-pictures-gestao{
+.projects-pictures-gestao, .en-projects-pictures-gestao{
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
