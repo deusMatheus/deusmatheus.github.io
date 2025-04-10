@@ -1,7 +1,7 @@
 //let previousButton = document.getElementById('previous_service_button')
 //let nextButton = document.getElementById('next_service_button')
 
-const IDsLength = 3;
+const IDsLength = 4;
 var actualService = 1;
 var currentSlide = 0;
 var lastSlide = 0;
@@ -16,7 +16,7 @@ function removeFade() {
 }
 
 function slideShow() {
-    if(actualService != 2 && actualService != 3){
+    if(actualService != 2 && actualService != 3){   
         clearTimeout(slideShow);
     }
     else {

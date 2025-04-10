@@ -304,6 +304,7 @@ footer {
     height: 95vh;
     display: inline;
 }
+
 .empty-space{
     padding-top: 7vh;
     padding-bottom: 7vh;
@@ -364,18 +365,23 @@ footer {
     overflow: hidden;
 }
 
-.projects-pictures, .en-projects-pictures{
+.projects-pictures, .en-projects-pictures, .plot-figure, .projects-pictures-gestao, .en-projects-pictures-gestao, .en-plot-figure{
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
 }
 
-.projects-pictures-gestao, .en-projects-pictures-gestao{
+.plot-figure{
+    display: inline-block;
+}
+
+/*
+.projects-pictures-gestao, .en-projects-pictures-gestao, .en-plot-figure{
     max-width: 85vw;
     max-height: 80vh;
     border: solid var(--transp_green);
 }
-
+*/
 .fade {
     animation-name: fade;
     animation-duration: .5s;
@@ -388,6 +394,11 @@ footer {
 
 .services-div{
     display: inline;
+}
+
+.plot{
+    text-align: center;
+    display: block;
 }
 
 @media only screen and (orientation: portrait){

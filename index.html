@@ -6,6 +6,7 @@
     <title>Portfólio - Matheus Deus</title>
     <link rel="icon" type="image/x-icon" href="files/code_icon.png">
     <script src="script.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +35,8 @@
             </div>
         </div>
         <div class="language-button-div">
-            <button onclick="setPTBR()" id="set-ptbr-button" class="language-button">PT-BR</button>
-            <button onclick="setENUS()" id="set-enus-button" class="language-button">EN-US</button>
+            <button onclick="setPTBR()" id="set-ptbr-button" class="language-button">PT BR</button>
+            <button onclick="setENUS()" id="set-enus-button" class="language-button">EN US</button>
         </div>
     </header>
     <hr>
@@ -200,8 +201,24 @@
                                         Utilizando bibliotecas como MatPlotLib, NumPy e outras é possível gerar gráficos para diferentes cenários. Estes cenários incluem o plot de equações diferenciais, funções diversas e até mesmo gráficos baseados em dados coletados. 
                                     </p>
                                     <p class="main-text-paragraph">
-                                        Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
+                                        Confira abaixo alguns gráficos gerados junto com uma breve legenda explicando seu significado.
                                     </p>
+                                    <div class="plot">
+                                        <div>
+                                            <button>Gráfico anterior</button>
+                                            <button>Próximo gráfico</button>    
+                                        </div>
+                                        <div>
+                                            <p class="main-text-paragraph">As curvas abaixo representam a evolução dos parâmetros de densidade das componentes do universo de acordo com o redshift. Para um detalhamento melhor, consultar: Capítulo 4 - Cosmology I: Homogeneous isotropic world models do livro Extragalactic Astronomy and Cosmology, escrito por Peter Schneider.</p>
+                                            <p class="main-text-paragraph">As equações utilizadas são apresentadas abaixo, onde o fator de escala cósmico é função do redshift:</p>
+                                            <math>$$\Omega_m = \frac{a \Omega_{m_0}}{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_r = \frac{\Omega_{r_0}}{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_{\Lambda} = \frac{a^4 \Omega_{\Lambda_0} }{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
+                                        </div>
+                                        <div>
+                                            <img class="plot-figure" src="files/plot_1.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
         
@@ -283,15 +300,17 @@
                             </li>
                             <li id="en-service-4" class="disabled">
                                 <h3>
-                                    Generating graphics
+                                    Plotting graphics
                                 </h3>
                                 <div class="projects-text-div">
                                     <p class="main-text-paragraph">
                                         Using libraries such as MatPlotLib and NumPy it's possible to generate graphics for different scenarios that includes differential equation plots, general functions and plots on collected data. 
                                     </p>
                                     <p class="main-text-paragraph">
-                                        ENGLISH TEXT GOES HERE Nas imagens abaixo represento o plot para equações diferenciais com o objetivo de analisar o comportamento das densidades de matéria, radiação e energia escura do universo conforme resultados das Equações de Einstein.
+                                        Check below some plots with a brief explanation.
                                     </p>
+                                    <math>$$a \gt b$$</math>
+                                    
                                 </div>
                             </li>
                         </ul>
