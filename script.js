@@ -190,6 +190,7 @@ function previousPlotButtonClick(){
 function setPTBR(){
     actualService = 1;
     currentSlide = 1;
+    actualPlot = 1;
     const ptbr = document.getElementsByClassName('ptbr')
     const enus = document.getElementsByClassName('enus')
     document.querySelector('body').dataset.theme = 'ptbr';
@@ -205,6 +206,7 @@ function setPTBR(){
 function setENUS(){
     actualService = 1;
     currentSlide = 1;
+    actualPlot = 1;
     const ptbr = document.getElementsByClassName('ptbr')
     const enus = document.getElementsByClassName('enus')
     document.querySelector('body').dataset.theme = 'enus';
