@@ -2,7 +2,9 @@
 //let nextButton = document.getElementById('next_service_button')
 
 const IDsLength = 4;
+const plotsLength = 2;
 var actualService = 1;
+var actualPlot = 1;
 var currentSlide = 0;
 var lastSlide = 0;
 let slideShowVar = ''
@@ -20,21 +22,21 @@ function slideShow() {
         clearTimeout(slideShow);
     }
     else {
-        console.log('Current Slide');
-        console.log(currentSlide);
+        // console.log('Current Slide');
+        // console.log(currentSlide);
         if(currentSlide == lastSlide) {
             currentSlide = 1;
-            console.log(path + currentSlide + extension);
+            // console.log(path + currentSlide + extension);
             slideShowVar[0].src = path + currentSlide + extension;
             slideShowVar[0].classList.add('fade');
-            setTimeout(removeFade,1500);
-            setTimeout(slideShow,5000)
+            // setTimeout(removeFade,1500);
+            setTimeout(slideShow,5000);
         } else {
             currentSlide++;
-            console.log(path + currentSlide + extension);
+            // console.log(path + currentSlide + extension);
             slideShowVar[0].src = path + currentSlide + extension;
             slideShowVar[0].classList.add('fade');
-            setTimeout(removeFade,1500);
+            // setTimeout(removeFade,1500);
             setTimeout(slideShow, 5000);
         }    
     }
@@ -47,8 +49,16 @@ function getServiceDOM(actualService) {
     return document.getElementById('service-'+actualService);
 }
 
+function getPlotDOM(actualPlot) {
+    if(document.querySelector('body').dataset.theme == 'enus'){
+        return document.getElementById('en-plot-'+actualPlot);
+    }
+    return document.getElementById('plot-'+actualPlot);
+}
+
 function nextButtonClick() {
     let service = getServiceDOM(actualService);
+    service.classList.remove('fade');
     service.classList.remove('enabled');
     service.classList.add('disabled');
     if(actualService == IDsLength){
@@ -57,6 +67,7 @@ function nextButtonClick() {
         actualService += 1;
     }
     service = getServiceDOM(actualService);
+    service.classList.add('fade');
     service.classList.remove('disabled');
     service.classList.add('enabled');
     if(actualService == 2) {
@@ -89,6 +100,7 @@ function nextButtonClick() {
 
 function previousButtonClick(){
     let service = getServiceDOM(actualService);
+    service.classList.remove('fade');
     service.classList.remove('enabled');
     service.classList.add('disabled');
     if(actualService == 1){
@@ -97,9 +109,37 @@ function previousButtonClick(){
         actualService -= 1;
     }
     service = getServiceDOM(actualService);
+    service.classList.add('fade');
     service.classList.remove('disabled');
     service.classList.add('enabled');
     if(actualService == 2) {
+        if(document.querySelector('body').dataset.theme == 'ptbr'){
+            slideShowVar = document.getElementsByClassName('projects-pictures');
+        }
+        else if(document.querySelector('body').dataset.theme == 'enus'){
+            slideShowVar = document.getElementsByClassName('en-projects-pictures');
+        }
+        path = 'files/vendas_';
+        extension = '.png';
+        currentSlide = 1;
+        lastSlide = 7;
+        slideShow()
+    }
+    if(actualService == 3) {
+        if(document.querySelector('body').dataset.theme == 'ptbr'){
+            slideShowVar = document.getElementsByClassName('projects-pictures-gestao');
+        }
+        else if(document.querySelector('body').dataset.theme == 'enus'){
+            slideShowVar = document.getElementsByClassName('en-projects-pictures-gestao');
+        }
+        path = 'files/gestao_pedidos_';
+        extension = '.png';
+        currentSlide = 1;
+        lastSlide = 10;
+        slideShow()
+    }
+
+    /*if(actualService == 2) {
         slideShowVar = document.getElementsByClassName('projects-pictures');
         path = 'files/vendas_';
         extension = '.png';
@@ -114,9 +154,38 @@ function previousButtonClick(){
         currentSlide = 1;
         lastSlide = 10;
         slideShow()
-    }
+    }*/
 }
 
+function nextPlotButtonClick(){
+    plot = getPlotDOM(actualPlot);
+    plot.classList.remove('fade')
+    plot.classList.add('disabled');
+    if(actualPlot == plotsLength){
+        actualPlot = 1;
+    }
+    else{
+        actualPlot += 1;
+    }
+    plot = getPlotDOM(actualPlot);
+    plot.classList.add('fade');
+    plot.classList.remove('disabled');
+}
+
+function previousPlotButtonClick(){
+    plot = getPlotDOM(actualPlot);
+    plot.classList.remove('fade')
+    plot.classList.add('disabled');
+    if(actualPlot == 1){
+        actualPlot = plotsLength;
+    }
+    else{
+        actualPlot -= 1;
+    }
+    plot = getPlotDOM(actualPlot);
+    plot.classList.add('fade');
+    plot.classList.remove('disabled');
+}
 
 function setPTBR(){
     actualService = 1;

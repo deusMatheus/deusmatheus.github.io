@@ -203,20 +203,26 @@
                                     <p class="main-text-paragraph">
                                         Confira abaixo alguns gráficos gerados junto com uma breve legenda explicando seu significado.
                                     </p>
+                                    <div class="plots-buttons-div">
+                                        <button onclick="previousPlotButtonClick()" class="plots-buttons">Gráfico anterior</button>
+                                        <button onclick="nextPlotButtonClick()" class="plots-buttons">Próximo gráfico</button>    
+                                    </div>
                                     <div class="plot">
-                                        <div>
-                                            <button>Gráfico anterior</button>
-                                            <button>Próximo gráfico</button>    
-                                        </div>
-                                        <div>
+                                        <div class="plot-1" id="plot-1">
                                             <p class="main-text-paragraph">As curvas abaixo representam a evolução dos parâmetros de densidade das componentes do universo de acordo com o redshift. Para um detalhamento melhor, consultar: Capítulo 4 - Cosmology I: Homogeneous isotropic world models do livro Extragalactic Astronomy and Cosmology, escrito por Peter Schneider.</p>
                                             <p class="main-text-paragraph">As equações utilizadas são apresentadas abaixo, onde o fator de escala cósmico é função do redshift:</p>
-                                            <math>$$\Omega_m = \frac{a \Omega_{m_0}}{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
-                                            <math>$$\Omega_r = \frac{\Omega_{r_0}}{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
-                                            <math>$$\Omega_{\Lambda} = \frac{a^4 \Omega_{\Lambda_0} }{a^4 \Omega_{\Lambda_0} + \Omega_{r_0} + a \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_m = \frac{a \: \Omega_{m_0}}{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_r = \frac{\Omega_{r_0}}{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_{\Lambda} = \frac{a^4 \: \Omega_{\Lambda_0} }{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <div>
+                                                <img class="plot-figure" src="files/plot_1.png" alt="">
+                                            </div>
                                         </div>
-                                        <div>
-                                            <img class="plot-figure" src="files/plot_1.png" alt="">
+                                        <div class="plot-2 disabled" id="plot-2">
+                                            <p class="main-text-paragraph">O gráfico abaixo representa a quantidade de itens vendidos por um feirante em um determinado período. Desta forma ele pode prever melhor como administrar seu negócio.</p>
+                                            <div>
+                                                <img class="plot-figure" src="files/plot_2.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -309,7 +315,28 @@
                                     <p class="main-text-paragraph">
                                         Check below some plots with a brief explanation.
                                     </p>
-                                    <math>$$a \gt b$$</math>
+                                    <div class="plots-buttons-div">
+                                        <button onclick="previousPlotButtonClick()" class="plots-buttons">Previous Plot</button>
+                                        <button onclick="nextPlotButtonClick()" class="plots-buttons">Next Plot</button>    
+                                    </div>
+                                    <div class="plot">
+                                        <div class="plot-1" id="en-plot-1">
+                                            <p class="main-text-paragraph"> The plots below represent the evolution of density parameters as componentes of the universe as a funcion of redshift. For a better understanding it's recomended to look at Chapter 4 - Cosmology I: Homogeneous isotropic world models from Extragalactic Astronomy and Cosmology book, written by Peter Schneider.</p>
+                                            <p class="main-text-paragraph">The equations used for the plot are presented below, using the cosmic scale factor as redshift dependant function:</p>
+                                            <math>$$\Omega_m = \frac{a \: \Omega_{m_0}}{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_r = \frac{\Omega_{r_0}}{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <math>$$\Omega_{\Lambda} = \frac{a^4 \: \Omega_{\Lambda_0} }{a^4 \: \Omega_{\Lambda_0} + \Omega_{r_0} + a \: \Omega_{m_0}}$$</math>
+                                            <div>
+                                                <img class="plot-figure" src="files/plot_1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="plot-2 disabled" id="en-plot-2">
+                                            <p class="main-text-paragraph">The plot below presents the amout of itens sold by a marketer at a fair in a certain peiord. By doing this, it could foresee which products are the best sellers and better manage it's business..</p>
+                                            <div>
+                                                <img class="plot-figure" src="files/plot_2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                     
                                 </div>
                             </li>

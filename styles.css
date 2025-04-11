@@ -375,6 +375,28 @@ footer {
     display: inline-block;
 }
 
+.plots-buttons-div {
+    text-align: center;
+    padding-bottom: 1.3vh;
+}
+
+.plots-buttons {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: .8em;
+    color: var(--font_color);
+    background-color: var(--transp_purple);
+    border: solid var(--neon_purple_dark);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.plots-buttons:hover{
+    background-color: var(--neon_purple);
+}
+
 /*
 .projects-pictures-gestao, .en-projects-pictures-gestao, .en-plot-figure{
     max-width: 85vw;
@@ -399,6 +421,8 @@ footer {
 .plot{
     text-align: center;
     display: block;
+    border: solid var(--transp_purple);
+    border-radius: 9px;
 }
 
 @media only screen and (orientation: portrait){
